@@ -36,7 +36,7 @@ body {
 
   /*background: color image repeat. position/size*/
   background: var(--bg-url) no-repeat top center/cover;
-  height: 2000px;
+  height: 2500px;
  
 
 }
@@ -193,3 +193,35 @@ footer{
   text-align: center;
   font-size: 14px;
 }
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/img4black.png);
+    height: 3000px;
+  }
+
+  .light {
+    --bg-url: url(./assets/img4light.png);
+  }
+}
+
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
